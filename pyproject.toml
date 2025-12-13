@@ -1,17 +1,20 @@
 [project]
 name = "jupyter_server_connections"
 version = "0.1.0"
-description = "A jupyter server extension to provide endpoints for kernel connection files"
+description = "A Jupyter Server extension providing an endpoint for kernel connection files."
 authors = [
     {name = "Christopher Field", email = "chris.field@theiascientific.com"},
 ]
 readme = "README.md"
-requires-python = ">=3.11"
-classifiers = [ "Programming Language :: Python :: 3", "Operating System :: OS Independent" ]
-dependencies = [
-    "jupyter_clieint",
-    "jupyter_server >= 1.0.0",
-    "tornado"
+requires-python = ">=3.8"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
 ]
 
 [build-system]
@@ -22,9 +25,21 @@ build-backend = "hatchling.build"
 jupyter-server-connections = "jupyer_server_connections.app:main"
 
 [project.optional-dependencies]
-dev = [ "ipython", "ipykernel" ]
+dev = [
+    "build",
+    "hatch",
+    "ipython",
+    "ipykernel",
+    "jupyter_client",
+    "jupyter_server>=2.0.0",
+    "tornado",
+    "twine"
+]
 
 [project.urls]
 Homepage = "https://github.com/Theia-Scientific/jupyter_server_connections"
-"Bug Tracker" = "https://github.com/Theia-Scientific/jupyter_server_connections/issues"
+Source = "https://github.com/Theia-Scientific/jupyter_server_connections"
+Tracker = "https://github.com/Theia-Scientific/jupyter_server_connections/issues"
 
+[tool.hatch.build.targets.wheel.shared-data]
+"jupyter-config" = "etc/jupyter/jupyter_server_config.d"
