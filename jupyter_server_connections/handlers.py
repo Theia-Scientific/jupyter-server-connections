@@ -19,7 +19,6 @@ class KernelConnectionHandler(ConnectionsHandler):
     @authorized
     async def get(self, kernel_id):
         connection_file_path = find_connection_file(f"kernel-{kernel_id}.json")
-        print(f"{connection_file_path=}")
         with open(connection_file_path) as f:
             info = json.load(f)
         self.finish(json.dumps(info, default=json_default))
