@@ -3,4 +3,4 @@
 from .app import ConnectionsExtensionApp
 
 def _jupyter_server_extension_points():
-    return [{"module": "jupyter_server_connections.app", "app": ConnectionsExtensionApp}]
+    return [{"module": "connections.app", "app": ConnectionsExtensionApp}]

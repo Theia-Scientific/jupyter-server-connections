@@ -6,8 +6,8 @@ from jupyter_server.services.kernels.handlers import _kernel_id_regex
 from .handlers import KernelConnectionHandler
 
 class ConnectionsExtensionApp(ExtensionApp):
-    name = "jupyter_server_connections"
-    extension_url = "/connetions"
+    name = "connections"
+    extension_url = "/connections"
     local_other_extensions = False
 
     def initialize_handlers(self):

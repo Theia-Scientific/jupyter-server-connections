@@ -19,6 +19,9 @@ build-backend = "hatchling.build"
 [project.scripts]
 jupyter-server-connections = "jupyer_server_connections.app:main"
 
+[project.optional-dependencies]
+dev = [ "ipython", "ipykernel" ]
+
 [project.urls]
 Homepage = "https://github.com/Theia-Scientific/jupyter_server_connections"
 "Bug Tracker" = "https://github.com/Theia-Scientific/jupyter_server_connections/issues"
