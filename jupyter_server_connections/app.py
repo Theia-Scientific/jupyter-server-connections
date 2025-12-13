@@ -6,13 +6,11 @@ from jupyter_server.services.kernels.handlers import _kernel_id_regex
 from .handlers import KernelConnectionHandler
 
 class ConnectionsExtensionApp(ExtensionApp):
-    name = "connections"
-    extension_url = "/connections"
-    local_other_extensions = False
+    name = "jupyter_server_connections"
 
     def initialize_handlers(self):
         self.handlers.extend([
-            (r"/kernels/%s/connection" % _kernel_id_regex, KernelConnectionHandler)
+            (r"/api/kernels/%s/connection" % _kernel_id_regex, KernelConnectionHandler)
         ])
 
     def initialize_settings(self):
