@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 
 from jupyter_server.extension.application import ExtensionApp
+from jupyter_server.services.kernels.handlers import _kernel_id_regex
 
-from .handlers import DefaultHandler
+from .handlers import KernelConnectionHandler
 
 class ConnectionsExtensionApp(ExtensionApp):
     name = "jupyter_server_connections"
-    extension_url = "/jupyter_server_connetions/default"
+    extension_url = "/connetions"
     local_other_extensions = False
-    file_url_prefix = "/render"
 
     def initialize_handlers(self):
         self.handlers.extend([
-            (rf"/connections", DefaultHandler)
+            (r"/kernels/%s/connection" % _kernel_id_regex, KernelConnectionHandler)
         ])
 
     def initialize_settings(self):
