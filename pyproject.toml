@@ -1,0 +1,25 @@
+[project]
+name = "jupyter_server_connections"
+version = "0.1.0"
+description = "A jupyter server extension to provide endpoints for kernel connection files"
+authors = [
+    {name = "Christopher Field", email = "chris.field@theiascientific.com"},
+]
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [ "Programming Language :: Python :: 3", "Operating System :: OS Independent" ]
+dependencies = [
+    "jupyter_server >= 1.0.0",
+]
+
+[build-system]
+requires = [ "hatchling" ]
+build-backend = "hatchling.build"
+
+[project.optional-dependencies]
+dev = []
+
+[project.urls]
+Homepage = "https://github.com/Theia-Scientific/jupyter_server_connections"
+"Bug Tracker" = "https://github.com/Theia-Scientific/jupyter_server_connections/issues"
+

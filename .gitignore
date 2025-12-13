@@ -1,0 +1,33 @@
+MANIFEST
+build
+dist
+*.py[cod]
+__pycache__
+*.egg-info
+*~
+*.bak
+.ipynb_checkpoints
+.tox
+.DS_Store
+\#*#
+.#*
+.coverage
+.cache
+htmlcov/
+.mypy_cache
+Pipfile
+Pipfle.lock
+.venv
+.envrc
+
+# Sphinx documentation
+_build
+docs/_build/
+docs/gh-pages
+
+# PyBuilder
+target/
+
+# PyCharm
+.idea/
+*.iml
