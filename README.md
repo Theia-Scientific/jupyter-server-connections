@@ -168,8 +168,13 @@ Network File System (NFS).
 11. Wait for CI to complete.
 12. Add comment to PR that it is ready to review.
 
+## License
+
+Copyright (C) 2025 Theia Scientific, LLC. All rights reserved.
+
 [connections file]: https://jupyter-client.readthedocs.io/en/stable/kernels.html#connection-files
 [curl]: https://curl.se/
 [direnv]: https://direnv.net/
 [jupyter_server rest api]: https://jupyter-server.readthedocs.io/en/latest/developers/rest-api.html
 [zeromq]: https://zeromq.org/
+
