@@ -29,11 +29,16 @@ jupyter-server-connections = "jupyer_server_connections.app:main"
 [project.optional-dependencies]
 dev = [
     "build",
+    "flake8",
     "hatch",
     "ipython",
     "ipykernel",
+    "isort",
     "jupyter_client",
     "jupyter_server>=2.0.0",
+    "pytest",
+    "pytest-cov",
+    "pytest_mock",
     "tornado",
     "twine"
 ]
