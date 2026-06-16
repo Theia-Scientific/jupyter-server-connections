@@ -7,6 +7,7 @@ import urllib.parse
 from jupyter_server.utils import url_path_join
 from tornado.escape import url_escape
 
+
 @pytest.fixture
 def jsc_serverapp(jp_configurable_serverapp):
     return jp_configurable_serverapp(config={
@@ -14,6 +15,7 @@ def jsc_serverapp(jp_configurable_serverapp):
             "jpserver_extensions": {"jupyter_server_terminals": True, "jupyter_server_connections": True}
         }
     })
+
 
 @pytest.fixture
 def jsc_fetch(jsc_serverapp, http_server_client, jp_auth_header, jp_base_url):
@@ -35,6 +37,7 @@ def jsc_fetch(jsc_serverapp, http_server_client, jp_auth_header, jp_base_url):
             url, headers=headers, request_timeout=request_timeout, **kwargs
         )
     return client_fetch
+
 
 async def test_kernel_connection(jsc_fetch):
     # Confirm there are no kernels
