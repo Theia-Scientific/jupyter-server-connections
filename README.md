@@ -167,15 +167,15 @@ Network File System (NFS).
 
 10. Commit changes to your local branch.
 
-   ```sh
-   git add -A && git commit -m "Add new feature"
-   ```
+    ```sh
+    git add -A && git commit -m "Add new feature"
+    ```
 
 11. Push your local branch to GitHub to create a Pull Request (PR).
 
-   ```sh
-   git push origin feature-awesome-new-feature
-   ```
+    ```sh
+    git push origin feature-awesome-new-feature
+    ```
 
 12. Create a Pull Request (PR) in GitHub.
 13. Wait for CI to complete.
