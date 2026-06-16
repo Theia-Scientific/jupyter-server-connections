@@ -1,5 +1,8 @@
 # jupyter_server_connections: A Jupyter server extension to share kernel connection files 
 
+[![CI](https://github.com/Theia-Scientific/jupyter-server-connections/workflows/CI/badge.svg)](https://github.com/Theia-Scientific/jupyter-server-connections/actions/workflows/ci.yml)
+[![Release](https://github.com/Theia-Scientific/jupyter-server-connections/workflows/Release/badge.svg)](https://github.com/Theia-Scientific/jupyter-server-connections/actions/workflows/release.yml)
+
 Each kernel creates a [connections file] formatted as JSON that contains the
 ports used for creating the various [ZeroMQ] sockets to communicate with the
 kernel. This file is located in the `JUPYTER_RUNTIME_DIR` directory, e.g.,
