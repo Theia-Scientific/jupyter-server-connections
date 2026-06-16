@@ -17,5 +17,5 @@ class ConnectionsExtensionApp(ExtensionApp):
     def initialize_settings(self):
         self.log.info("Initialize settings")
 
- 
+
 main = launch_new_instance = ConnectionsExtensionApp.launch_instance
