@@ -53,3 +53,6 @@ Tracker = "https://github.com/Theia-Scientific/jupyter_server_connections/issues
 
 [tool.hatch.build.targets.wheel.shared-data]
 "jupyter-config" = "etc/jupyter/jupyter_server_config.d"
+
+[tool.coverage.report]
+omit = [ "__main__.py" ]
