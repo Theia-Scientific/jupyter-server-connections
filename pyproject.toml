@@ -8,6 +8,7 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
+    "Framework :: Jupyter",
     "Intended Audience :: Developers",
     "Intended Audience :: System Administrators",
     "Programming Language :: Python",
