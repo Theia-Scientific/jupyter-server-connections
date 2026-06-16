@@ -10,10 +10,11 @@ from tornado import web
 
 AUTH_RESOURCE = "connections"
 
-class ConnectionsHandler(JupyterHandler):
 
+class ConnectionsHandler(JupyterHandler):
     auth_resource = AUTH_RESOURCE
-    
+
+
 class KernelConnectionHandler(ConnectionsHandler):
     @web.authenticated
     @authorized

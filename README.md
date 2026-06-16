@@ -1,5 +1,8 @@
 # jupyter_server_connections: A Jupyter server extension to share kernel connection files 
 
+[![CI](https://github.com/Theia-Scientific/jupyter-server-connections/workflows/CI/badge.svg)](https://github.com/Theia-Scientific/jupyter-server-connections/actions/workflows/ci.yml)
+[![Release](https://github.com/Theia-Scientific/jupyter-server-connections/workflows/Release/badge.svg)](https://github.com/Theia-Scientific/jupyter-server-connections/actions/workflows/release.yml)
+
 Each kernel creates a [connections file] formatted as JSON that contains the
 ports used for creating the various [ZeroMQ] sockets to communicate with the
 kernel. This file is located in the `JUPYTER_RUNTIME_DIR` directory, e.g.,
@@ -152,21 +155,34 @@ Network File System (NFS).
    commands. Change back to the terminal running the `jupyter server` command.
    Press `CTRL+C` and enter `Y` to stop the process.
 
-8. Commit changes to your local branch.
+8. Run automated tests locally on developer machine, and add tests to maintain
+   100% coverage as needed.
 
    ```sh
-   git add -A && git commit -m "Add new feature"
+   pytest --color=yes --cov=jupyter_server_connections --cov-report=term-missing
    ```
 
-9. Push your local branch to GitHub to create a Pull Request (PR).
+9. Run linter for style conformity and minimize potential bugs.
 
    ```sh
-   git push origin feature-awesome-new-feature
+   flake8 . --exclude .venv --count --max-complexity=10 --max-line-length=127 --statistics
    ```
 
-10. Create a Pull Request (PR) in GitHub.
-11. Wait for CI to complete.
-12. Add comment to PR that it is ready to review.
+10. Commit changes to your local branch.
+
+    ```sh
+    git add -A && git commit -m "Add new feature"
+    ```
+
+11. Push your local branch to GitHub to create a Pull Request (PR).
+
+    ```sh
+    git push origin feature-awesome-new-feature
+    ```
+
+12. Create a Pull Request (PR) in GitHub.
+13. Wait for CI to complete.
+14. Add comment to PR that it is ready to review.
 
 ## License
 

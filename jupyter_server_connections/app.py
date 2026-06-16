@@ -5,6 +5,7 @@ from jupyter_server.services.kernels.handlers import _kernel_id_regex
 
 from .handlers import KernelConnectionHandler
 
+
 class ConnectionsExtensionApp(ExtensionApp):
     name = "jupyter_server_connections"
 
@@ -15,5 +16,6 @@ class ConnectionsExtensionApp(ExtensionApp):
 
     def initialize_settings(self):
         self.log.info("Initialize settings")
+
 
 main = launch_new_instance = ConnectionsExtensionApp.launch_instance
