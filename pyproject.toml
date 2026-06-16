@@ -37,7 +37,9 @@ dev = [
     "jupyter_client",
     "jupyter_server>=2.0.0",
     "pytest",
+    "pytest-asyncio",
     "pytest-cov",
+    "pytest-jupyter[server]",
     "pytest_mock",
     "tornado",
     "twine"
