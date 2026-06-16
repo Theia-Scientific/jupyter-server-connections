@@ -57,6 +57,12 @@ async def test_kernel_connection(jsc_fetch):
     kernel_name = kernel["name"]
     assert kernel_name is not None
 
+    # Confirm there is one kernel
+    response = await jsc_fetch("api", "kernels", method="GET")
+    assert response.code == 200
+    data = json.loads(response.body)
+    assert len(data) == 1
+
     # Get the connection file
     response = await jsc_fetch("api", "kernels", kernel_id, "connection", method="GET")
     assert response.code == 200
