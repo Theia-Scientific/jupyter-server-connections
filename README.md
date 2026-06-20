@@ -1,4 +1,4 @@
-# jupyter_server_connections: A Jupyter server extension to share kernel connection files 
+# jupyter-server-connections: A Jupyter server extension to share kernel connection files 
 
 [![CI](https://github.com/Theia-Scientific/jupyter-server-connections/workflows/CI/badge.svg)](https://github.com/Theia-Scientific/jupyter-server-connections/actions/workflows/ci.yml)
 [![Release](https://github.com/Theia-Scientific/jupyter-server-connections/workflows/Release/badge.svg)](https://github.com/Theia-Scientific/jupyter-server-connections/actions/workflows/release.yml)
