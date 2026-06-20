@@ -31,12 +31,11 @@ Network File System (NFS).
 
 ## Installation
 
-1. Obtain a package key from Theia Scientific personnel. Save it for Step 2.
-2. Install the `jupyter_server_connections` package using `pip` and the private
-   package repository.
+1. Install the `jupyter_server_connections` package using `pip` and the public
+   package repository (PyPI).
 
    ```sh
-   pip install --extra-index-url="https://pypi:<KEY>@app.envelope.dev/simple/" jupyter_server_connections
+   pip install jupyter_server_connections
    ```
    
 ## Contributing
