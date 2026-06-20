@@ -1,4 +1,4 @@
-name: Publish to Envelope.dev
+name: Publish to Python Package Indices
 
 on:
   release:
@@ -7,28 +7,42 @@ on:
   workflow_dispatch:
 
 jobs:
+  pypi:
+    name: Upload release to the Python Package Index (PyPI)
+    runs-on: ubuntu-latest
+    environment: release
+    permissions:
+        id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Install build tools
+        run: python3 -m pip install --upgrade build
+
+      - name: Build wheel
+        run: python3 -m build
+
+      - name: Publish wheel
+        uses: pypa/gh-action-pypi-publish@release/v1
+
   envelope:
     name: Upload release to Envelope.dev
     runs-on: ubuntu-latest
     environment: release
-
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          cache: pip
-          python-version: 3.11
-
       - name: Install build tools
-        run: python -m pip install --upgrade build
+        run: python3 -m pip install --upgrade build
 
       - name: Build wheel
-        run: python -m build
+        run: python3 -m build
 
       - name: Publish wheel
         uses: pypa/gh-action-pypi-publish@release/v1
