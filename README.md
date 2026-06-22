@@ -1,4 +1,4 @@
-# jupyter_server_connections: A Jupyter server extension to share kernel connection files 
+# jupyter-server-connections: A Jupyter server extension to share kernel connection files
 
 [![CI](https://github.com/Theia-Scientific/jupyter-server-connections/workflows/CI/badge.svg)](https://github.com/Theia-Scientific/jupyter-server-connections/actions/workflows/ci.yml)
 [![Release](https://github.com/Theia-Scientific/jupyter-server-connections/workflows/Release/badge.svg)](https://github.com/Theia-Scientific/jupyter-server-connections/actions/workflows/release.yml)
@@ -31,12 +31,11 @@ Network File System (NFS).
 
 ## Installation
 
-1. Obtain a package key from Theia Scientific personnel. Save it for Step 2.
-2. Install the `jupyter_server_connections` package using `pip` and the private
-   package repository.
+1. Install the `jupyter_server_connections` package using `pip` and the public
+   package repository (PyPI).
 
    ```sh
-   pip install --extra-index-url="https://pypi:<KEY>@app.envelope.dev/simple/" jupyter_server_connections
+   pip install jupyter_server_connections
    ```
    
 ## Contributing
@@ -186,11 +185,14 @@ Network File System (NFS).
 
 ## License
 
-Copyright (C) 2025 Theia Scientific, LLC. All rights reserved.
+This project is licensed under either the [3-Clause BSD license] See the
+[LICENSE] file for information about licensing and copyright.
 
+[3-clause bsd license]: https://opensource.org/license/bsd-3-clause
 [connections file]: https://jupyter-client.readthedocs.io/en/stable/kernels.html#connection-files
 [curl]: https://curl.se/
 [direnv]: https://direnv.net/
 [jupyter_server rest api]: https://jupyter-server.readthedocs.io/en/latest/developers/rest-api.html
+[license]: https://github.com/Theia-Scientific/jupyter-server-connections/blob/main/LICENSE
 [zeromq]: https://zeromq.org/
 
