@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.1.2 (2026-06-24)
+
+### Bug fixes
+
+- Fixed commands used in README ([#14](https://github.com/Theia-Scientific/jupyter-server-connections/pull/14))
+
 ## 0.1.1 (2026-06-24)
 
 ### Bug fixes
