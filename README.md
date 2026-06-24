@@ -31,11 +31,11 @@ Network File System (NFS).
 
 ## Installation
 
-1. Install the `jupyter_server_connections` package using `pip` and the public
+1. Install the `jupyter-server-connections` package using `pip` and the public
    package repository (PyPI).
 
    ```sh
-   pip install jupyter_server_connections
+   pip install jupyter-server-connections
    ```
    
 ## Contributing
@@ -43,7 +43,7 @@ Network File System (NFS).
 1. Clone this repository.
 
    ```sh
-   git clone https://github.com/Theia-Scientific/jupyter_server_connections.git && cd jupyter_server_connections
+   git clone https://github.com/Theia-Scientific/jupyter-server-connections.git && cd jupyter-server-connections
    ```
 
 2. Create a virtual environment.
