@@ -2,7 +2,7 @@
 
 ## 0.1.2 (2026-06-24)
 
-## Bug fixes
+### Bug fixes
 
 - Fixed commands used in README ([#14](https://github.com/Theia-Scientific/jupyter-server-connections/pull/14))
 
