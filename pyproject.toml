@@ -47,9 +47,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Theia-Scientific/jupyter_server_connections"
-Source = "https://github.com/Theia-Scientific/jupyter_server_connections"
-Tracker = "https://github.com/Theia-Scientific/jupyter_server_connections/issues"
+Homepage = "https://github.com/Theia-Scientific/jupyter-server-connections"
+Source = "https://github.com/Theia-Scientific/jupyter-server-connections"
+Tracker = "https://github.com/Theia-Scientific/jupyter-server-connections/issues"
 
 [tool.hatch.build.targets.wheel.shared-data]
 "jupyter-config" = "etc/jupyter/jupyter_server_config.d"
